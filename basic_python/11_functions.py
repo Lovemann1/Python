@@ -28,3 +28,24 @@ def add2(a,b):
 result = add2(3,5)
 print(result)
 
+def greet(a,b):
+     print(f"hi {a} and hlo {b} ")
+     print("another line")
+
+greet("ashish","pankaj")
+greet("nisha","depika")
+greet(23,34)
+
+
+# function are of two type
+# function that perform the task
+def function_for_sanj(p,q):
+     print(q+p)
+function_for_sanj("not","do")
+
+# function that return value
+def calculatoradd(*numbers):
+     return sum(numbers)
+var = calculatoradd(2,6,55,  34)
+print(var)
+     

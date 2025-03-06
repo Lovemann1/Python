@@ -6,4 +6,4 @@
 # displaying the user's input 
 # print("hello, "+ name + "!') "
 age = input(" please inter your age")
-print(f"next year you will be {(int(age)+1)}")
+print(f"next year you will be {int(age)+1}")

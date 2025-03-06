@@ -36,7 +36,7 @@ print("select a operation: \n" \
         "4. devision\n"\
         "5. average\n")
 
-select = int(input("select a operaton from 1, to 5"))
+select = int(input("select a operaton from 1, to 5 :- "))
 number1 = int(input("enter first number:"))
 number2 = int(input("enter second number:"))
 
@@ -44,14 +44,17 @@ number2 = int(input("enter second number:"))
 # print the result 
 if select ==1:
     print("sum of these numbers is", add(number1,number2))
-if select ==2:
+elif select ==2:
     print("sub of these numbers is ", sub(number1,number2))
-if select ==3:
+elif select ==3:
     print("multiply of these numbers is ", multiply(number1,number2))
-if select ==4:
+elif select ==4:
     print("divide of these numbers is ", devide(number1,number2))
-if select ==5:
+elif select ==5:
     print("avg of these numbers is ", avg(number1,number2))
+else:
+    print("invalid_oprater")
+
 
 
 
