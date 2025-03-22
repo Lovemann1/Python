@@ -48,4 +48,12 @@ def calculatoradd(*numbers):
      return sum(numbers)
 var = calculatoradd(2,6,55,  34)
 print(var)
+
+
+
+
+def king_hello(loveman):
+     print("hello boss",loveman)
+
+king_hello("loveman")
      

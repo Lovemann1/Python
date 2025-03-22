@@ -1,5 +1,5 @@
 # string methods 
-word = "hello world"
+word = "Hello world"
 print(len(word))
 uppr = (word.lower())
 print(uppr)

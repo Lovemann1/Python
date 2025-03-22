@@ -3,7 +3,7 @@
 # ---index: position if the character
 # syntax string[index_value]
 
-name = "loveman"
+name = "loveman o no how this happened"
 print(name[2]) # give you the 3rd number 
 
 print(name[-5]) # it will give you the last 5th letter

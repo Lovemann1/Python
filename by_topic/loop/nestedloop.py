@@ -31,13 +31,26 @@
     #     else:
     #         print(i,"--")
 
-for num in range(2,10):
-    print(num ,"main num")
-    for i in  range(2,num):
-     if num % i == 0:
-        break
-    else:
-     print(num)
+# for num in range(2,10):
+#     print(num ,"main num")
+#     for i in  range(2,num):
+#      if num % i == 0:
+#         break
+#     else:
+#      print()
+
+
+# for i in range(5):
+  
+#   for j in range(i):
+#     print('#', end=' ')
+#   print(1)
 
 
 
+# do while loop 
+while True:
+  num = int(input("entar a num"))
+  if num > 10:
+    break
+  

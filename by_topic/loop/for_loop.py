@@ -11,6 +11,7 @@ def raise_to_power(base_num,pow_num):
     for index in range(pow_num):
         result = result*base_num
     return result
+
 print(raise_to_power(3,4))
 
 number = (10,20,30)
@@ -38,9 +39,33 @@ for c in range(11):
         break
     print(c)
 
-    
 
 
+# makeing delebrately infinity loop
+# n = 0
+# while n < 1 :
+#     n = int(input("enter a number"))
+# print(n)
 
 
-       
+# list in for loop 
+
+students = ["hermione", "harry" ,"Ron"]
+print(students)
+for student in students:
+    print(student)
+
+# dict in for loop
+
+students = [
+    {"name":"hermione", "house":"gryffindor","patronus":"otter"},
+    {"name":"harry","house":"gryffindor","patronus":"stag"},
+    {"name":"ron","house":"gryffindor","patronus":"jack Russell terrir"},
+    {"name":"draco","house":"slytherin","patronus": None}
+]
+
+for student in (students):
+    print(student["name"])
+
+a = students[0]
+print(a)

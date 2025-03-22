@@ -60,6 +60,12 @@ name = "canged bro code"
 print(name.replace("c","C"))  # replaced one letter with another
 
 
+
+
+
+
+
+
 #Qu1
 # 1. username is no more then 12 world
 # 2. username must not contain spaces
@@ -70,3 +76,13 @@ if len(username)> 12 or username.find("_"):
     print("username can't be more then 12 letter and spaceses")
 else:
     print("welcome ",username)
+
+name = ("   Loveman")
+# adding to methods togather 
+print(name.strip().title())
+
+# round in float datatype
+a = int(input("enter int "))
+b = float(input("enter flot value"))
+print(type(a+b))
+
