@@ -28,5 +28,4 @@ df = pd.DataFrame({'Product Name': filtered_list, 'Price ($)': clean_price, 'dat
 
 # today
 today_date = str(datetime.today().strftime('%Y-%m-%d'))
-df.to_csv(rf'C:\my_work\IPhone_Price_Everyday\Price_on_{today_date}.csv')
-
+df.to_csv(rf'C:\my_work\IPhone_Price_Everyday\CSV_files\Price_on_{today_date}.csv')
