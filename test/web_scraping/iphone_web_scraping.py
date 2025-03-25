@@ -23,7 +23,7 @@ clean_price = [_.text for _ in price]
 import pandas as pd
 from datetime import datetime
 
-df = pd.DataFrame({'Product Name': filtered_list, 'Price ($)': clean_price, 'date':datetime.today()})
+df = pd.DataFrame({'Product Name': filtered_list, 'Price': clean_price, 'date':datetime.today()})
 # df.to_csv(r'C:\my_work\IPhone_Price_Everyday\everday_price.csv')
 
 # today
