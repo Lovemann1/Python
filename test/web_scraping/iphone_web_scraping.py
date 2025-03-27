@@ -1,3 +1,5 @@
+#  on 27_03-2025 i removed 'Apple iPhone 14 Pro (256 GB) - Deep Purple (Renewed)' from the filtered list 
+# because there was no price listed in the website therefor list item was mismatched
 
 from bs4 import BeautifulSoup
 import requests
@@ -7,10 +9,10 @@ soup = BeautifulSoup(page.text,'html')
 all_listitems = soup.find('div', class_= "s-main-slot s-result-list s-search-results sg-row")
 name = all_listitems.find_all('h2')
 clear_name = [_.text for _ in name]
-filtered_list = [item for item in clear_name if item not in ['Results', 'More results','Related searches']]
+filtered_list = [item for item in clear_name if item not in ['Results', 'More results','Related searches','Apple iPhone 14 Pro (256 GB) - Deep Purple (Renewed)']]
     
 # print(filtered_list)
-# len = 51
+# print(len(filtered_list))
 
 
 
@@ -19,13 +21,14 @@ filtered_list = [item for item in clear_name if item not in ['Results', 'More re
 price = all_listitems.find_all('span', class_ = 'a-price-whole')
 clean_price = [_.text for _ in price]
 # print(clean_price)
-#len = 48
+# print(len(clean_price))
+
+
 import pandas as pd
 from datetime import datetime
 
 df = pd.DataFrame({'Product Name': filtered_list, 'Price': clean_price, 'date':datetime.today()})
-# df.to_csv(r'C:\my_work\IPhone_Price_Everyday\everday_price.csv')
-
+print(df)
 # today
 today_date = str(datetime.today().strftime('%Y-%m-%d'))
 df.to_csv(rf'C:\my_work\IPhone_Price_Everyday\CSV_files\Price_on_{today_date}.csv')
