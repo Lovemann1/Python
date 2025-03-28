@@ -1,5 +1,5 @@
 #  on 27_03-2025 i removed 'Apple iPhone 14 Pro (256 GB) - Deep Purple (Renewed)' from the filtered list 
-# because there was no price listed in the website therefor list item was mismatched
+#       because there was no price listed in the website therefor list item was mismatched
 
 from bs4 import BeautifulSoup
 import requests
@@ -9,7 +9,7 @@ soup = BeautifulSoup(page.text,'html')
 all_listitems = soup.find('div', class_= "s-main-slot s-result-list s-search-results sg-row")
 name = all_listitems.find_all('h2')
 clear_name = [_.text for _ in name]
-filtered_list = [item for item in clear_name if item not in ['Results', 'More results','Related searches','Apple iPhone 14 Pro (256 GB) - Deep Purple (Renewed)']]
+filtered_list = [item for item in clear_name if item not in ['Results', 'More results','Related searches']]
     
 # print(filtered_list)
 # print(len(filtered_list))
