@@ -41,7 +41,7 @@ if page.status_code == 200:
         prices = prices[:min_length]
 
         # Create DataFrame
-        df = pd.DataFrame({'Product Name': filtered_names, 'Price': prices, 'Date': datetime.today().strftime('%Y-%m-%d')})
+        df = pd.DataFrame({'Product Name': filtered_names, 'Price': prices, 'date': datetime.today()})
         print(df)
         #Save as CSV
         folder_path = r'C:\my_work\IPhone_Price_Everyday\CSV_files'
@@ -49,7 +49,7 @@ if page.status_code == 200:
         today_date = datetime.today().strftime('%Y-%m-%d')
         file_path = os.path.join(folder_path, f'Price_on_{today_date}.csv')
 
-        df.to_csv(file_path, index=False, encoding='utf-8')
+        df.to_csv(file_path, encoding='utf-8')
 
         print("✅ Data scraped and saved successfully!")
     else:
